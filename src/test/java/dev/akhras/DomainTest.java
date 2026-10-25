@@ -1,0 +1,1 @@
+package dev.akhras;import org.junit.jupiter.api.Test;import static org.junit.jupiter.api.Assertions.*;class DomainTest{@Test void transitions(){assertEquals(Domain.Status.REVIEW,Domain.transition(Domain.Status.SUBMITTED,Domain.Status.REVIEW));assertThrows(IllegalArgumentException.class,()->Domain.transition(Domain.Status.APPROVED,Domain.Status.REVIEW));}}
